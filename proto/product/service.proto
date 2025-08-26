@@ -10,4 +10,5 @@ option go_package = "github.com/dwi-prasetiyo/protobuf/protogen/product";
 
 service ProductService {
 	rpc ReduceStocks (product.type.ReduceStocksReq) returns (google.protobuf.Empty) {}
+	rpc RollbackStocks (product.type.RollbackStocksReq) returns (google.protobuf.Empty) {}
 }

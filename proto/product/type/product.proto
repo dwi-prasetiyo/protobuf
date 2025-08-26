@@ -12,3 +12,7 @@ message ProductOrder {
 message ReduceStocksReq {
     repeated ProductOrder productOrders = 1 [json_name = "product_orders"];
 }
+
+message RollbackStocksReq {
+    repeated ProductOrder productOrders = 1 [json_name = "product_orders"];
+}
