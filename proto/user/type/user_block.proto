@@ -1,0 +1,14 @@
+syntax = "proto3";
+
+package user.type;
+
+option go_package = "github.com/dwi-prasetiyo/protobuf/protogen/user";
+
+message CheckUserBlockReq {
+    string userId = 1 [json_name = "user_id"];
+}
+
+message CheckUserBlockRes {
+    bool isBlocked = 1 [json_name = "is_blocked"];
+    string reason = 2 [json_name = "reason"];
+}

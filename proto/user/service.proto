@@ -1,0 +1,11 @@
+syntax = "proto3";
+
+package user;
+
+import "proto/user/type/user_block.proto";
+
+option go_package = "github.com/dwi-prasetiyo/protobuf/protogen/user";
+
+service UserService {
+	rpc CheckUserBlock(user.type.CheckUserBlockReq) returns (user.type.CheckUserBlockRes) {}
+}
